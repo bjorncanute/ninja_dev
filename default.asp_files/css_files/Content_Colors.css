@@ -1,0 +1,201 @@
+/* ############################### FONTS AND COLORS ############################### */
+body a {color:#666;}
+
+body a:active{color:#999999;}
+
+font {color:#000;}
+
+body b {
+	font-weight: 600;
+}
+#content_area .colors_productname i b,
+#content_area .colors_text, 
+#content_area .pricecolor,
+#content_area .pricecolor b span {
+	font-weight: normal;
+	color:#1DAACA !important;
+}
+
+table,
+td {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+
+textarea,
+input {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	color:#000;}
+
+form {margin:0px;}
+
+.bgcolor1 {font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+.bgcolor3 {font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+.bglinecolor {}
+
+.productnamecolorLaRGE,
+a.productnamecolorLaRGE {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.productnamecolorLaRGE:hover {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+
+.productnamecolor,
+a.productnamecolor {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.productnamecolor:hover {
+	text-decoration:none;}
+
+.productnamecolorSMaLL {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+a.productnamecolorSMaLL{
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.productnamecolorSMaLL:hover{
+	text-decoration:none;}
+
+.pricecolor {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+a.pricecolor,
+a.pricecolor:hover {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+
+.pricecolorSMaLL {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+a.pricecolorSMaLL,
+a.pricecolorSMaLL:hover {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+
+a.RegularLink {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.RegularLink:hover {
+	text-decoration:underline;}
+
+.smalltext {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+a.smalltext,
+a.smalltext:hover {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+
+.nav1,
+a.nav1 {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.nav1:hover {
+	text-decoration:none;}
+.nav1_selected,
+a.nav1_selected {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+
+a.nav1_selected:hover {
+	text-decoration:none;}
+
+.nav2,
+a.nav2 {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.nav2:hover{
+	text-decoration:none;}
+.nav2_selected,
+a.nav2_selected {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.nav2_selected:hover {
+	text-decoration:none;}
+
+.nav3,
+a.nav3 {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.nav3:hover {
+	text-decoration:none;}
+.nav3_selected,
+a.nav3_selected {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.nav3_selected:hover {
+	text-decoration:none;}
+
+.carttext {
+	font:10px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.carttext {
+	font:10px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.carttext:hover {
+	font:10px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:underline;}
+
+a {text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.bgcolor2 {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;}
+
+.navtitle,
+a.navtitle,
+a.navtitle:hover {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	letter-spacing:3px;}
+
+.navTOP,
+a.navTOP {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	color:#000000;
+	text-decoration:none;}
+a.navTOP:hover {
+	color:#000000;
+	text-decoration:underline;}
+
+.navBOTTOM,
+a.navBOTTOM {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.navBOTTOM:hover {
+	text-decoration:underline;}
+
+.NavSpecials,
+a.NavSpecials {
+	font:12px Raleway, Arial, Verdana, Helvetica, Sans-serif;
+	text-decoration:none;}
+a.NavSpecials:hover {
+	text-decoration:none;}
+
+BODY {background-color:#ffffff;}
+A {color:#666666;}
+A:hover {color:#888888;}
+TD {color:#000000;}
+.colors_background_main {background-color:#ffffff;}
+.colors_background1 {background-color:#ffffff;}
+.colors_background1_text {color:#333333;}
+.colors_background1_text:hover{color:#333333;}
+.colors_background2 {background-color:#ffffff;}
+A.colors_background2_text:hover {color:#666666;}
+.colors_background2_text {color:#666666;}
+.colors_background3 {background-color:#DDDDDD;}
+A.colors_background3_text:hover {color:#666666;}
+.colors_background3_text {color:#666666;}
+.colors_backgroundlight {background-color:#eeeeee;}
+.colors_backgroundlight_dark {background-color:#dddddd;}
+.colors_backgroundneutral {background-color:#eeeeee;}
+.colors_backgroundneutral_dark {background-color:#dddddd;}
+.colors_descriptionbox {background-color:#eeeeee;}
+.colors_highlight {background-color:#ffbb00;}
+.colors_lines {background-color:#000000;}
+.colors_lines_light {background-color:#cccccc;}
+.colors_links {color:#666666;}
+A.colors_links:hover {color:#888888}
+.colors_menutitle {background-color:#444444;}
+.colors_menutitletext {color:#ffffff;}
+.colors_pricebox {background-color:#eeeeee;}
+.colors_productname {color:#444444;}
+A.colors_productname:hover {color:#666666;}
+.colors_productprice {color:#cc0000;}
+A.colors_text:hover {color:#000000;}
+.colors_text {color:#000000;}
+A.colors_homepage_title{color:#007DE9;}
