@@ -18,21 +18,22 @@
 /* 						Content_Colors.css 						*/
 
 /* ############################### FONTS AND COLORS ############################### */
-body a {color:#666;}
+body a { color: #92b0e7; }
 
-body a:active{color:#999999;}
+body a:active{ color:#92b0e7; }
 
-font {color:#000;}
+font { color:#000; }
 
 body b {
 	font-weight: 600;
 }
+
 #content_area .colors_productname i b,
 #content_area .colors_text, 
 #content_area .pricecolor,
 #content_area .pricecolor b span {
 	font-weight: normal;
-	color:#1DAACA !important;
+	/*color:#1DAACA !important;*/
 }
 
 table,
@@ -224,14 +225,12 @@ A.colors_homepage_title{color:#007DE9;}
 body {
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-family: "Avenir Next", sans-serif;
   text-align: center;
-  font-weight: 500;
-  -webkit-text-size-adjust: none;
-  background: #ececec repeat left top;
-  background-image: url('../images/template/body-bg.jpg');
-  overflow-y: scroll;
+  font-weight: 400;
+  /*-webkit-text-size-adjust: none;*/
+  background: #262a31;
 }
 #table_checkout_cart3 li {
   list-style: inside;
@@ -271,7 +270,7 @@ img {
 #pageWrapper {padding-bottom: 8px;}
 #content_area .v65-cart-giftcert-details-row td font,
 #content_area .v65-cart-giftcert-details-row td font b {
-  color: #666666 !important;
+  /*color: #666666 !important;*/
 }
 /** ========== CHECKOUT ========== **/
 #v65-onepage-DetailHeaders,
@@ -778,7 +777,7 @@ white-space:normal !important;
 }
 
 #content_area td[bgcolor="#ffcc00"] {
-  background-color: #f6c1ac !important;
+  /*background-color: #f6c1ac !important;*/
   -webkit-border-radius: 8px;
   border-radius: 8px;
   -webkit-box-shadow: 1px 1px 6px 0px rgba(1, 1, 1, .4);
@@ -791,7 +790,7 @@ white-space:normal !important;
 }
 
 #content_area td[bgcolor="#ffcc00"] table {
-  background-color: #f6c1ac !important;
+  /*background-color: #f6c1ac !important;*/
 }
 #content_area td[bgcolor="#ffcc00"] font {
   color: #6c4836;
@@ -900,3 +899,109 @@ white-space:normal !important;
 #display_menu_1 .nav {background-color:transparent;}
 #display_menu_1 .nav_hover {background-color:#1daaca;}
 */
+
+/* 				NEW SHIT 			*/
+
+#topNav {
+	background-color: #1d2026;
+	height: 60px;
+	width: 100%;
+	border-bottom: 3px solid #050a12;
+}
+
+#display_menu_1 {
+	color: #c6c6c6;
+}
+
+#display_menu_1 .nav a {
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 500;
+	color: #c6c6c6;
+	font-size: 16px;
+	line-height: 60px;
+	padding: 0 27px;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	-o-text-shadow: none;
+	-ms-text-shadow: none;
+}
+
+#display_homepage_title a {
+	font-family: "Avenir Next", sans-serif;
+	color: #5dc8f4;
+	font-size: 23px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	-ms-text-shadow: none;
+	-o-text-shadow: none;
+}
+
+#display_homepage_title a .heavy {
+	font-weight: 900;
+	color: #ebebeb;
+}
+
+#contentWrap {
+	/*background-color: #262a31;*/
+	background: none;
+}
+
+#content_area {
+	background-color: #262a31;
+}
+
+.v65-productDisplay td {
+	width: 277px;
+	/*margin: 0 20px;*/
+	/*background-color: gray;*/
+}
+/*	Item card */
+.v65-productDisplay .v65-productDisplay td {
+	/*border: 1px dotted white;*/
+	background-color: #575d68;
+}
+/* horizontal gap bewteen columns */
+.v65-productDisplay .v65-productDisplay td[rowspan="3"] {
+	background: green;
+	background-color: #262a31;
+	border: 0;
+	width: 40px;
+
+}
+/*	vertical gap between rows */
+.v65-productDisplay .v65-productDisplay td[colspan="5"] {
+	background-color: #262a31;
+	border: 0;
+	height: 49px;
+}
+
+.v65-productDisplay .v65-productDisplay td div {
+	padding: 18px 15px;
+	/*background-color: red;*/
+}
+.v65-productDisplay .v65-productDisplay td div div {
+	padding: 0;
+}
+.v65-productDisplay .productnamecolor {
+	color: #1d2026;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+/*.colors_productprice */
+/*.v65-productDisplay .text {*/
+.product_productprice, .text
+.product_productprice {
+	border: 1px dotted white;
+	display: block;
+	color: #1a1b1d;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
