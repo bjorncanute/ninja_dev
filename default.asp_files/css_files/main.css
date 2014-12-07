@@ -3,7 +3,7 @@
 /*@import url(Template.css);*/
 /*@import url(Navigation.css);*/
 
-/* fonts.css */
+/* 						fonts.css					  					*/
 
 @font-face {
     font-family: 'WisdomScriptAIRegular';
@@ -15,7 +15,7 @@
 
 }
 
-/* Content_Colors.css */
+/* 						Content_Colors.css 						*/
 
 /* ############################### FONTS AND COLORS ############################### */
 body a {color:#666;}
@@ -219,7 +219,7 @@ A.colors_text:hover {color:#000000;}
 .colors_text {color:#000000;}
 A.colors_homepage_title{color:#007DE9;}
 
-/* Template.css */
+/* 						Template.css 									*/
 
 body {
   margin: 0;
@@ -797,7 +797,7 @@ white-space:normal !important;
   color: #6c4836;
 }
 
-/* Navigation */
+/* 						Navigation.css 								*/
 
 #topNav ul li {
   display: inline;
