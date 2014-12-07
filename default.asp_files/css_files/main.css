@@ -32,7 +32,7 @@ body b {
 #content_area .colors_text, 
 #content_area .pricecolor,
 #content_area .pricecolor b span {
-	font-weight: normal;
+	/*font-weight: normal;*/
 	/*color:#1DAACA !important;*/
 }
 
@@ -217,7 +217,7 @@ A.colors_links:hover {color:#888888}
 A.colors_productname:hover {color:#666666;}
 .colors_productprice {color:#cc0000;}
 A.colors_text:hover {color:#000000;}
-.colors_text {color:#000000;}
+/*.colors_text {color:#000000;}*/
 A.colors_homepage_title{color:#007DE9;}
 
 /* 						Template.css 									*/
@@ -349,13 +349,11 @@ a#homepage_title {
   color:#1daaca;
   font-weight: 400;
   font-family: WisdomScriptAIRegular, sans-serif;
-  text-shadow: 1px 1px 0 #fff;
 }
 
 a#homepage_title:hover {
 	text-decoration: underline;
 	color:#ff8e1e;
-	text-shadow: -1px -1px 0 #fff;
 }
 
 /** ========== TOP NAVIGATION ========== **/
@@ -573,7 +571,6 @@ input#elist_submit {
   width: 960px;
   font-family: Raleway, sans-serif;
   font-weight: 500;
-  text-shadow: 0 1px 0 #fff;
   letter-spacing: 1px;
   background: no-repeat 0 0;
   background-image: url('../images/template/footer-grid.png');
@@ -810,13 +807,11 @@ white-space:normal !important;
   text-transform: uppercase;
   font-weight: 600; 
   color: #696969;
-  text-shadow: 1px 1px 0 #fff;
   height: 17px;
 }
 #topNav ul li.nav_hover a,
 #topNav ul li a:hover {
   color:#fff;
-  text-shadow: 1px 1px 0 #acabab;
   text-decoration: none;
   background:#1daaca url(../images/template/top-nav-hover.png) repeat-x 0 0;
 }
@@ -849,7 +844,6 @@ white-space:normal !important;
     text-transform: uppercase;
     text-align:center;
     font-weight: 600;
-  	text-shadow: 1px 1px 0 #acabab;
   	text-decoration: none;
   	height: 17px;
   	background-image: url(../images/template/top-nav-hover.png) !important;
@@ -920,11 +914,6 @@ white-space:normal !important;
 	font-size: 16px;
 	line-height: 60px;
 	padding: 0 27px;
-	text-shadow: none;
-	-webkit-text-shadow: none;
-	-moz-text-shadow: none;
-	-o-text-shadow: none;
-	-ms-text-shadow: none;
 }
 
 #display_homepage_title a {
@@ -933,11 +922,6 @@ white-space:normal !important;
 	font-size: 23px;
 	font-weight: 500;
 	text-transform: uppercase;
-	text-shadow: none;
-	-webkit-text-shadow: none;
-	-moz-text-shadow: none;
-	-ms-text-shadow: none;
-	-o-text-shadow: none;
 }
 
 #display_homepage_title a .heavy {
@@ -996,12 +980,31 @@ white-space:normal !important;
 
 /*.colors_productprice */
 /*.v65-productDisplay .text {*/
-.product_productprice, .text
+.product_productprice b,
+.product_productprice .text,
 .product_productprice {
-	border: 1px dotted white;
-	display: block;
+	/*border: 1px dotted white;*/
+	/*display: block;*/
+	margin-top: 30px;
 	color: #1a1b1d;
 	font-family: "Avenir Next", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
+}
+
+.product_saleprice {
+	color: #fb7070;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+/* footer */
+#footer {
+	width: 100%;
+	background-color: #17191d;
+}
+
+#footerTop {
+	margin: 0 auto;
 }
