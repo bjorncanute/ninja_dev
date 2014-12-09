@@ -457,17 +457,18 @@ input#search_submit {
   float:right;
   margin-top: 12px;
   position: relative;
-  background: url(../images/template/tile-stripe.png) repeat 0 0;
+  /*background-color: red;*/
 }
 
 #footer #eListWrap .title {
-	color: #FFFFFF;
-    float: left;
-    font-family: Raleway,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 0 12px;
-    text-transform: uppercase;
+	color: #e7e7e7;
+  float: left;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 10px 0 0 12px;
+  text-transform: uppercase;
 }
 
 #eList {
@@ -479,6 +480,7 @@ input#search_submit {
   position: absolute;
   top: 5px;
   right: 5px;
+  /*background-color: gray;*/
 }
 
 #eList form {
@@ -486,28 +488,31 @@ input#search_submit {
   padding: 0;
   width: 100%;
   height: 100%;
+  /*background-color: red;*/
 }
 input#elist_input {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #B6B6B6;
-    color: #574E47;
-    display: block;
-    float: right;
-    font-family: Raleway,sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    height: 15px;
-    letter-spacing: 1px;
-    margin: 0;
-    outline: medium none;
-    padding: 7px 5px 5px 9px;
-    text-align: left;
-    width: 220px;
-    -webkit-transition: all .5s ease-in-out;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #B6B6B6;
+  border: 0;
+  color: #574E47;
+  display: block;
+  float: right;
+  font-family: Raleway,sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  height: 15px;
+  letter-spacing: 1px;
+  margin: 0;
+  outline: medium none;
+  padding: 7px 5px 5px 9px;
+  text-align: left;
+  width: 220px;
+  -webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
+  background-color: #101112;
 }
 
 input#elist_input:focus {
@@ -517,28 +522,29 @@ input#elist_input:focus {
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 	width: 255px;
-	background: #fff;
-	color:#574E47;
+  background-color: #586e94;
+	color: #101112;
 }
 
-
 input#elist_submit {
-    background: url(../images/template/submit.png) no-repeat top right;
+    /*background: url(../images/template/submit.png) no-repeat top right;*/
     border: 0 none;
-    color: #FFFFFF;
+    color: #e7e7e7;
     cursor: pointer;
     display: block;
     position: absolute;
     top: 1px;
     right: 1px;
-    font-size: 0;
-    height: 27px;
+    font-size: 13;
+    height: 25px;
     margin: 0;
     padding: 0;
     text-align: right;
     text-indent: -9999px;
     width: 72px;
     outline: none;
+    border: 1px solid #586e94;
+    background-color: #101112;
 }
 
 /** ========== CONTENT ========== **/
@@ -573,7 +579,7 @@ input#elist_submit {
   font-weight: 500;
   letter-spacing: 1px;
   background: no-repeat 0 0;
-  background-image: url('../images/template/footer-grid.png');
+  /*background-image: url('../images/template/footer-grid.png');*/
 }
 
 #footer a {
@@ -584,6 +590,7 @@ input#elist_submit {
   height: 62px;
   width: 960px;
   margin: 0 auto;
+  border-bottom: 1px solid #586e94;
 }
 
 #social {
@@ -591,7 +598,6 @@ input#elist_submit {
   width: 238px;
   height: 39px;
   padding-left: 12px;
-  background: url(../images/template/tile-stripe.png) repeat 0 0;
   margin: 12px 0 0 0;
 }
 
@@ -600,13 +606,14 @@ input#elist_submit {
     margin: 8px 10px 0 0;
 }
 
-#social span {
-    color: #FFFFFF;
+#social p {
+    font-family: "Avenir Next", sans-serif;
+    color: #e7e7e7;
     float: left;
-    font-family: Raleway,sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 8px 7px 0 0;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 8px 25px 0 0;
     text-transform: uppercase;
 }
 
@@ -659,16 +666,16 @@ input#elist_submit {
 }
 
 #footer ul.col-1 {
-    margin: 18px 20px 0 23px;
-    width: 169px;
+    /*margin: 18px 20px 0 23px;*/
+    /*width: 169px;*/
 }
 #footer ul.col-2 {
-    margin: 18px 20px 0 0;
-    width: 129px;
+    /*margin: 18px 20px 0 0;*/
+    /*width: 129px;*/
 }
 #footer ul.col-3 {
-    margin: 18px 20px 0 0;
-    width: 151px;
+    /*margin: 18px 20px 0 0;*/
+    /*width: 151px;*/
 }
 #footer ul.col-4 {
     float: right;
@@ -1007,4 +1014,58 @@ white-space:normal !important;
 
 #footerTop {
 	margin: 0 auto;
+}
+
+#footerAbout {
+	margin-top: 0;
+}
+#footerAbout .title {
+	color: #e7e7e7;
+	font-size: 16px;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 300;
+	height: 45px;
+	padding-top: 30px;
+	line-height: 25px;
+	border-bottom: 1px solid #4f5b70;
+	margin-bottom: 35px;
+}
+
+#footerAbout p {
+	/*padding-top: 15px;*/
+	color: #eee;
+	font-style: 13px;
+	font-family: "Avenir Next", sans-serif;
+	line-height: 23px;
+	font-weight: 300;
+}
+
+#footerTop [class^=col] .title {
+	color: #e7e7e7;
+	font-size: 16px;
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 300;
+	height: 45px;
+	padding-top: 30px;
+	line-height: 25px;
+	border-bottom: 1px solid #4f5b70;
+	margin-bottom: 35px;
+}
+
+#footerTop [class^=col] {
+	/*background-color: red;*/
+	width: 200px;
+  /*margin: 18px 20px 0 0;*/
+  margin-right: 20px;
+}
+
+#footerTop [class^=col] a {
+	color: #a1bbe5;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px
+}
+#footerTop .col-4 {
+	display: none;
 }
