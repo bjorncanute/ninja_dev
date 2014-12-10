@@ -385,6 +385,7 @@ a#homepage_title:hover {
 
 #displaySearch {
     height: 27px;
+    /*height: 40px;*/
     position: absolute;
     right: 62px;
     top: 35px;
@@ -398,22 +399,24 @@ a#homepage_title:hover {
   /* background: #fff; */
 }
 input#search_input {
-    background:#fff url(../images/template/search-glass.png) no-repeat 7px 7px;
-    color: #574E47;
-    display: block;
-    float: right;
-    font-family: Raleway,sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    height: 15px;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 6px 30px 5px 28px;
-    text-align: left;
-    width: 150px;
-    outline: none;
-    border: 1px solid #d4d4d4;
-    -webkit-transition: all .5s ease-in-out;
+	background-color: #1d2026;
+  color: #97b6c3;
+  display: block;
+  float: right;
+  font-family: "Avenir Next",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  /*height: 15px;*/
+  height: 29px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 6px 30px 5px 28px;
+  text-align: left;
+  width: 150px;
+  outline: none;
+  /*border: 1px solid #d4d4d4;*/
+  border: 0px;
+  -webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
@@ -427,18 +430,17 @@ input#search_input:focus {
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
 	width: 223px;
-	background: #fff url(../images/template/search-glass.png) no-repeat 7px 7px;
-	color:#574E47;
+	background-color: #050a12;
 }
 
 
 input#search_submit {
-    background: url(../images/template/go.png) no-repeat 0 0;
+	background-color: #5dc8f4;
     color: #FFFFFF;
     cursor: pointer;
     display: block;
     font-size: 0;
-    height: 27px;
+    height: 40px;
     margin: 0;
     padding: 0;
     text-align: right;
@@ -690,16 +692,20 @@ input#elist_submit {
 }
 
 #footerBottom {
-    background: url("../images/template/line.png") repeat-x scroll left top transparent;
-    color: #696969;
-    font-size: 12px;
-    margin: 0 auto;
-    padding: 20px 0;
-    text-align: center;
-    width: 960px;
+  /*background: url("../images/template/line.png") repeat-x scroll left top transparent;*/
+  color: #6b717a;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 960px;
+  border-top: 1px solid #4f5b70;
+  font-family: "Avenir Next", sans-serif;
+  text-align: right;
+  font-weight: 400;
 }
 #footerBottom a {
-  color: #696969;
+	color: #586e94;
 }
 
 #footer a:hover {
@@ -818,9 +824,9 @@ white-space:normal !important;
 }
 #topNav ul li.nav_hover a,
 #topNav ul li a:hover {
-  color:#fff;
+  color: #83aecf;
   text-decoration: none;
-  background:#1daaca url(../images/template/top-nav-hover.png) repeat-x 0 0;
+  /*border-bottom: 4px solid #83aecf;*/
 }
 
 /* ################# POPOUTS ################### */
@@ -920,7 +926,7 @@ white-space:normal !important;
 	color: #c6c6c6;
 	font-size: 16px;
 	line-height: 60px;
-	padding: 0 27px;
+	padding: 0 20px;
 }
 
 #display_homepage_title a {
@@ -983,6 +989,12 @@ white-space:normal !important;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 18px;
+	/*color: #7ed7fc;*/
+}
+
+.v65-productDisplay .productnamecolor:hover {
+	color: #0a0b0e;
+	text-decoration: none !important;
 }
 
 /*.colors_productprice */
@@ -992,17 +1004,27 @@ white-space:normal !important;
 .product_productprice {
 	/*border: 1px dotted white;*/
 	/*display: block;*/
-	margin-top: 30px;
+	/*margin-top: 30px;*/
+	margin-top: 10px;
 	color: #1a1b1d;
 	font-family: "Avenir Next", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
 }
 
+.colors_text .product_productprice {
+	text-decoration: line-through;
+	font-size: 15px;
+	color: #30343c;
+	font-style: italic;
+}
+
 .product_saleprice {
-	color: #fb7070;
+	/*color: #fb7070;*/
+	/*color: #97d0f7;*/
+	color: #1a1b1d;
 	font-family: "Avenir Next", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 18px;
 }
 
