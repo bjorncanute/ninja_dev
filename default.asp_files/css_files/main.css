@@ -1091,3 +1091,10 @@ white-space:normal !important;
 #footerTop .col-4 {
 	display: none;
 }
+
+
+
+#injected_content .card {
+	background-color: red;
+	
+}
