@@ -2,7 +2,6 @@ $(document).ready(function() {
 
 	var $table 			= $(".v65-productDisplay .v65-productDisplay"),
 	    $cells 			= $table.find("td[valign=top]"),
-	    $card,
 	    price_regex = /\$[0-9]+\.[0-9]+/;
 
 	var json_cards = $cells.find("img").map(function() {
@@ -38,31 +37,32 @@ $(document).ready(function() {
 	});	
 
 	// console.log(json_cards);
-	
-	$(json_cards).each(function(index) {
-		$card = $("<div/>", {
-			class: 'card'
-		}).appendTo("#injected_content");		
+ var repaint = function(cards, $content_hook) {
+ 		$(cards).each(function(index) {
+			$card = $("<div/>", {
+				class: 'card'
+			}).appendTo($content_hook);		
 
-		$("<img/>", {
-			src: json_cards[index].img.src,
-			alt: json_cards[index].img.alt
-		}).appendTo($card);
+			$("<img/>", {
+				src: cards[index].img.src,
+				alt: cards[index].img.alt
+			}).appendTo($card);
 
-		$("<a/>", {
-			text: json_cards[index].permalink.text,
-			href: json_cards[index].permalink.href
-		}).appendTo($card);
+			$("<a/>", {
+				text: cards[index].permalink.text,
+				href: cards[index].permalink.href
+			}).appendTo($card);
 
-		$("<p/>", {
-			text: json_cards[index].product_price
-		}).appendTo($card);
+			$("<p/>", {
+				text: cards[index].product_price
+			}).appendTo($card);
 
-		$("<p/>", {
-			text: json_cards[index].sale_price
-		}).appendTo($card);
+			$("<p/>", {
+				text: cards[index].sale_price
+			}).appendTo($card);
+ 		});
+ };
 
-	});
-	
+ repaint(json_cards, "#injected_content");
 
 });
