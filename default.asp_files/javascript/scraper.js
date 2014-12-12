@@ -63,6 +63,6 @@ $(document).ready(function() {
  		});
  };
 
- repaint(json_cards, "#injected_content");
+ // repaint(json_cards, "#injected_content");
 
 });
