@@ -971,7 +971,7 @@ a#homepage_title {
 }
 /* horizontal gap bewteen columns */
 .v65-productDisplay .v65-productDisplay td[rowspan="3"] {
-	background: green;
+	/*background: green;*/
 	background-color: #262a31;
 	border: 0;
 	width: 40px;
@@ -1143,4 +1143,161 @@ a#homepage_title {
 	font-size: 18px;
 	font-family: "Avenir Next", sans-serif;
 
+}
+
+/*          Product Page CSS            */
+
+.vCSS_breadcrumb_td {
+  /*background-color: rgba(255,255,255, .1);*/
+  color: #c6c6c6;
+  font-family: "Cabin";
+  font-family: "Diwan Kufi";
+  font-size: 18px;
+  /*border-bottom: 2px solid #050a12;*/
+  /*margin-bottom: 20px;*/
+  /*position: relative;*/
+  /*top: -20px;*/
+}
+
+#vCSS_mainform > img {
+  display: none;
+}
+
+#v65-product-parent .vCSS_breadcrumb_td a {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #66a2bb;
+  margin: 0 .75em;
+}
+#v65-product-parent .vCSS_breadcrumb_td a:hover {
+  text-decoration: none;
+}
+
+#v65-product-parent .vCSS_breadcrumb_td font {
+  font-size: 15px;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #66a2bb;
+  color: #d3d6dd;
+  /*display: inline-block;*/
+  /*float: right;*/
+
+}
+
+#v65-product-parent .vCSS_breadcrumb_td br {
+  display: none;
+}
+
+
+#v65-product-parent tr:nth-child(2) {
+  /*background-color: green;*/
+  background-color: #575d68;
+}
+
+#v65-product-parent > tbody > tr:nth-child(1) {
+  /*vertical-align: top !important;*/
+  /*background-color: gray;*/
+  /*margin-bottom: 200px;*/
+  margin-bottom: 20px;
+}
+
+#v65-product-parent > tbody > tr:nth-child(1) td {
+  position: relative;
+  /*background-color: red;*/
+  padding-bottom: 75px;
+}
+
+#v65-product-parent > tbody > tr:nth-child(1) td img {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  background-color: #050a12;
+}
+
+#v65-product-parent > tbody > tr:nth-child(1) {
+  height: 150%;
+  /*background-color: aqua;*/
+  height: 34px;
+}
+
+#v65-product-parent .product_productprice .text,
+#v65-product-parent .product_productprice [itemprop=price] {
+  color: #ced3df;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  top: -15px;
+}
+
+#v65-product-parent .product_code_title,
+#v65-product-parent .product_code {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 14px;
+  color: #a3abbc;
+  position: relative;
+  top: -15px;
+}
+
+#v65-product-parent .colors_pricebox > tbody > tr > td > table > tbody > tr:nth-child(odd) {
+}
+
+#v65-product-parent .colors_pricebox img {
+  display: none;
+}
+
+#v65-product-parent .vCSS_input_addtocart {
+  padding: 2em 0;
+}
+
+.v65-productdetail-options table[cellspacing] td:nth-child(1) {
+  display: none;
+  /*background-color: red;*/
+}
+
+.v65-productDisplay-row .v65-productDisplay-cell.v65-productName {
+  /*background-color: red;*/
+  color: #898f9b;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.v65-productDisplay-row .product_saleprice,
+.v65-productDisplay-row .product_productprice {
+  /*border: 5px solid black;*/
+  margin-top: 20px;
+
+}
+
+.v65-productDisplay-row .product_saleprice,
+.v65-productDisplay-row .product_productprice * {
+  color: #898f9b;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Avenir Next", sans-serif;
+}
+
+.v65-productDisplay-row .product_saleprice .colors_text,
+.v65-productDisplay-row .product_productprice .colors_text {
+  /*color: green !important;*/
+}
+
+.v65-productDisplay-row .product_saleprice {
+  text-decoration: none;
+  border: 1px dotted blue;
+}
+.v65-productDisplay-row .product_productprice {
+  border: 1px dotted red;
+  text-decoration: none;
+}
+.v65-productDisplay-row .product_productprice font {
+  color: #898f9b;
 }
