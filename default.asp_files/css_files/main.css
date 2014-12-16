@@ -198,7 +198,7 @@ A.colors_links:hover {color:#888888}
 .colors_pricebox {background-color:#eeeeee;}
 .colors_productname {color:#444444;}
 A.colors_productname:hover {color:#666666;}
-.colors_productprice {color:#cc0000;}
+/*.colors_productprice {color:#cc0000;}*/
 A.colors_text:hover {color:#000000;}
 /*.colors_text {color:#000000;}*/
 A.colors_homepage_title{color:#007DE9;}
@@ -951,14 +951,23 @@ a#homepage_title {
 
 #content_area {
 	background-color: #262a31;
+  border: 1px dotted #000;
 }
 
-.v65-productDisplay td {
+.v65-productDisplay {
+  /*width: 1040px;*/
+  /*margin: 0 auto;*/
+}
+.v65-productDisplay .v65-productDisplay td {
 	width: 277px;
+
+  width: 227px;
+  border: 1px dotted red;
 	/*margin: 0 20px;*/
 	/*background-color: gray;*/
 }
 /*	Item card */
+
 .v65-productDisplay .v65-productDisplay td {
 	/*border: 1px dotted white;*/
 	background-color: #575d68;
@@ -988,12 +997,13 @@ a#homepage_title {
 .v65-productDisplay .v65-productDisplay td div div {
 	padding: 0;
 }
-.v65-productDisplay .productnamecolor {
+.v65-productDisplay .productnamecolor,
+.v65-productDisplay .productnamecolor span {
 	color: #1d2026;
-	font-family: "Avenir Next", sans-serif;
-	font-weight: 600;
+	font-family: "Cabin", sans-serif;
+	font-weight: 500;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 15px;
 	/*color: #7ed7fc;*/
 }
 
@@ -1004,12 +1014,9 @@ a#homepage_title {
 
 /*.colors_productprice */
 /*.v65-productDisplay .text {*/
-.product_productprice b,
+/*.product_productprice b,
 .product_productprice .text,
 .product_productprice {
-	/*border: 1px dotted white;*/
-	/*display: block;*/
-	/*margin-top: 30px;*/
 	margin-top: 40px;
 	color: #1a1b1d;
 	font-family: "Avenir Next", sans-serif;
@@ -1026,12 +1033,47 @@ a#homepage_title {
 }
 
 .product_saleprice {
-	/*color: #fb7070;*/
-	/*color: #97d0f7;*/
 	color: #1a1b1d;
 	font-family: "Avenir Next", sans-serif;
 	font-weight: 500;
 	font-size: 18px;
+}
+*/
+
+
+
+
+/* single: our price */
+.product_productprice b {
+  color: blue;
+}
+/* single: $price */ 
+.product_productprice font {
+  color: red;
+}
+
+/* saleprice: sale price */
+.product_saleprice span {
+  color: rebeccapurple;
+}
+/* saleprice: $price */
+.product_saleprice {
+  color: orange;
+}
+
+/* double ourprice */
+.product_productprice {
+  color: #febafd;
+}
+
+
+
+
+
+
+.product_saleprice font span,
+.product_productprice span {
+  /*color: red;*/
 }
 
 /* footer */
