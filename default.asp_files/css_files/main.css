@@ -573,6 +573,7 @@ input#elist_submit {
   margin: 0;
   padding: 10px !important;
   width: 920px;
+  width: 940px;
   text-align: left;
   background: #fff;
 }
@@ -1184,40 +1185,6 @@ a#homepage_title {
 	display: none;
 }
 
-
-
-#injected_content .card {
-	/*background-color: red;*/
-
-}
-
-
-.card {
-	display: block;
-	position: relative;
-	float: left;
-	height: 277px;
-	width: 220px;
-	/*width: 140px;*/
-	margin-right: 15px;
-	background-color: #575d68;
-}
-
-.card:nth-child(4n) {
-	margin-right: 0;
-}
-
-.card img {
-	display: block;
-	width: 100%;
-}
-
-.card a {
-	color: #1d2026;
-	font-size: 18px;
-	font-family: "Avenir Next", sans-serif;
-
-}
 
 /*          Product Page CSS            */
 
