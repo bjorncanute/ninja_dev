@@ -300,30 +300,49 @@ a.productnamecolorLARGE {
 #header .header-content {
   margin: 0 auto;
   width: 960px;
-  border: 1px dotted #fff;
+  /*border: 1px dotted #fff;*/
   height: 60px;
 }
 
 #header .header-content .clear {
   clear: none;
 }
+
 /** ----- LOGO ----- **/
+
+#header .header-content .logo-wrapper {
+  width: 40px;
+  height: 60px;
+  float: left;
+  /*background-color: purple;*/
+}
+
+#header .header-content .logo-image {
+  width: 109px;
+  height: 109px;
+  position: relative;
+  top: -20px;
+  left: -13px;
+  background: url("../images/template/logo.png") no-repeat 0 0;
+}
+
 #display_homepage_title {
   font-family: "Avenir Next", sans-serif;
   font-size: 23px;
   color: #ebebeb;
   line-height: 60px;
   width: 290px;
+  width: 245px;
+  /*padding-right: 10px;*/
   float: left;
-  border: 1px dotted #fff;
+  /*border: 1px dotted #fff;*/
   margin: 0;
+  text-align: right;
 }
 #display_homepage_title a {
 }
-a#homepage_title {
-}
-
 a#homepage_title:hover {
+  text-decoration: none;
 }
 
 /** ========== TOP NAVIGATION ========== **/
@@ -332,7 +351,7 @@ a#homepage_title:hover {
   width: 546px;
   float: left;
   height: 60px;
-  border: 1px dotted aqua;
+  /*border: 1px dotted aqua;*/
 }
 
 #display_menu_1 {
@@ -357,8 +376,8 @@ a#homepage_title:hover {
   /*height: 40px;*/
   /*width:225px;*/
   /*width: 58px !important;*/
-  background-color: red;
-  border: 1px dotted red;
+  /*background-color: red;*/
+  /*border: 1px dotted red;*/
   float: left;
   width: 58px;
   float: right;
@@ -408,6 +427,7 @@ input#search_input:focus {
 	transition: all .5s ease-in-out;
 	width: 215px;
 	background-color: #050a12;
+  box-shadow: -50px 0 30px -20px #1d2026;
 }
 
 
@@ -727,7 +747,7 @@ z-index: 5;
 float: left;
 height: 60px;
 width: 58px;
-border: 1px dotted purple;
+/*border: 1px dotted purple;*/
 /*display: none;*/
 position: relative;
 }
@@ -848,17 +868,12 @@ white-space:normal !important;
 #topNav td.nav_hover a{
     margin:0;
     padding:7px 15px;
-    font-family: Raleway, sans-serif;
-    font-size:13px;
     display:block;
     text-transform: uppercase;
     text-align:center;
     font-weight: 600;
   	text-decoration: none;
   	height: 17px;
-  	background-image: url(../images/template/top-nav-hover.png) !important;
-    background-repeat: repeat-x !important;
-    background-position: top left !important;
 }
 #topNav td.subnav a{
     margin:0px;
@@ -901,7 +916,7 @@ white-space:normal !important;
 
 }
 #display_menu_1 .nav a:hover {
-  border-bottom: 4px solid #5d697f;
+  border-bottom: 3px solid #5d697f;
 }
 
 /*#display_homepage_title meta {
@@ -925,7 +940,8 @@ white-space:normal !important;
 }
 
 a#homepage_title {
-  color: red;
+  font-family: "Cabin", sans-serif;
+  font-family: "Avenir Next", sans-serif;
 }
 
 #contentWrap {
