@@ -962,7 +962,7 @@ a#homepage_title {
 	width: 277px;
 
   width: 227px;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 	/*margin: 0 20px;*/
 	/*background-color: gray;*/
 }
@@ -1577,3 +1577,11 @@ div[itemtype="http://schema.org/Product"] > a {
   margin-bottom: 30px;
 }
 
+
+.hero-banner {
+  width: 100%;
+}
+
+.hero-banner img {
+  width: 100%;
+}
