@@ -976,18 +976,24 @@ a#homepage_title {
 .v65-productDisplay .v65-productDisplay td img {
   width: 100%;
 }
+.v65-productDisplay .v65-productDisplay td:hover {
+  /*background-color: #707988;*/
+}
 /* horizontal gap bewteen columns */
 .v65-productDisplay .v65-productDisplay td[rowspan="3"] {
 	/*background: green;*/
 	background-color: #262a31;
 	border: 0;
 	width: 40px;
+  width: 20px;
+  width: 30px;
 }
 /*	vertical gap between rows */
-.v65-productDisplay .v65-productDisplay td[colspan="5"] {
+.v65-productDisplay .v65-productDisplay td[colspan="7"] {
 	background-color: #262a31;
 	border: 0;
 	height: 49px;
+  height: 35px;
 }
 
 .v65-productDisplay .v65-productDisplay td div {
@@ -1043,28 +1049,56 @@ a#homepage_title {
 
 
 
+.product_saleprice,
+.product_productprice {
+  font-family: "Cabin", sans-serif;
+}
+
 /* single: our price */
 .product_productprice b {
   color: blue;
+  color: #1a1b1d;
+  font-weight: 400;
+  font-size: 18px;
 }
 /* single: $price */ 
 .product_productprice font {
-  color: red;
+  /*color: red;*/
+  color: #4db0d0;
+  font-size: 14px;
 }
 
 /* saleprice: sale price */
 .product_saleprice span {
-  color: rebeccapurple;
+  /*color: rebeccapurple;*/
+  color: #4db0d0;
+  font-size: 14px;
+  /*font-size: 12px;*/
 }
 /* saleprice: $price */
 .product_saleprice {
   color: orange;
+  color: #1a1b1d;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* double ourprice */
 .product_productprice {
-  color: #febafd;
+  font-size: 15px;
+  color: #30343c;
+  margin-top: 20px; 
+  /*margin-top: 40px; */
 }
+
+.text.colors_text .product_productprice {
+  /*color: coral !important;*/
+  text-decoration: line-through;
+  font-style: italic;
+  /*margin-top: 20px;*/
+}
+
+
 
 
 
