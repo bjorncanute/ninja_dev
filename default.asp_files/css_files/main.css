@@ -1189,16 +1189,22 @@ a#homepage_title {
 /*          Product Page CSS            */
 
 .vCSS_breadcrumb_td {
-  /*background-color: rgba(255,255,255, .1);*/
   color: #c6c6c6;
   font-family: "Cabin";
   font-family: "Diwan Kufi";
   font-size: 18px;
-  /*border-bottom: 2px solid #050a12;*/
-  /*margin-bottom: 20px;*/
-  /*position: relative;*/
-  /*top: -20px;*/
-  /*padding-bottom: 0 !important;*/
+  padding-bottom: 42px;
+}
+
+.vCSS_breadcrumb_td:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: coral;
+  background-color: #050a12;
+  position: relative;
+  top: 20px;
 }
 
 #vCSS_mainform > img {
@@ -1227,11 +1233,6 @@ a#homepage_title {
   /*display: inline-block;*/
   /*float: right;*/
 
-}
-
-#v65-product-parent .vCSS_breadcrumb_td {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
 }
 
 #v65-product-parent .vCSS_breadcrumb_td br {
@@ -1324,15 +1325,7 @@ a#homepage_title {
   padding-bottom: 24px;
 }
 
-.v65-product-related-details-row {
 
-}
-
-.v65-product-related-header-cell > table {
-  /*background-color: red;*/
-  /*padding: 0 !important;*/
-  border-spacing: 0;
-}
 #related_products_header {
 
   background-color: #3f444b;
@@ -1366,32 +1359,28 @@ a#homepage_title {
   padding: 0 30px;
 }
 
-#related_products_content .v65-productDisplay-cell {
-  /*background-color: blue;*/
-  /*padding: 0 20px;*/
-  /*margin: 0 40px;*/
-}
+#v65-product-related {}
+.v65-productDisplay-row {}
+.v65-productDisplay-row .v65-productDisplay-cell {} 
+.v65-productDisplay-row .v65-productName {}
+.v65-product-related-details-row {}
+.v65-product-related-header-cell > table {  border-spacing: 0;}
+
+#related_products_content .v65-productDisplay-cell {}
 
 #related_products_content .v65-productColumn-divider {
   width: 100px;
   background-color: #3f444b;
   background-color: transparent;
 }
-
-#related_products_content .v65-productColumn-divider img {
-  display: none;
-}
+#related_products_content .v65-productColumn-divider img {display: none;}
+#related_products_content .v65-productRow-divider img {display: none;}
 
 #related_products_content .v65-productRow-divider {
   height: 40px;
+  /*background-color: red;*/
 }
-#related_products_content .v65-productRow-divider img {
-  display: none;
-}
-
-#related_products_content .v65-productDetailInfo {
-
-}
+#related_products_content .v65-productDetailInfo {}
 #related_products_content .v65-productPhoto {
   /*border: 1px dotted white;*/
   background-color: white;
@@ -1417,8 +1406,10 @@ a#homepage_title {
 }
 
 .v65-productDisplay-row > td {
-  background-color: red;
+  /*background-color: red;*/
+  /*background-color: #262a31;*/
   background-color: #262a31;
+  width: 400px;
 }
 
 .v65-productDisplay-cell.v65-productAvailability div {
@@ -1434,13 +1425,16 @@ a#homepage_title {
 #related_products_content img[src$="clear1x1.gif"] {
   display: none;
 }
-.v65-productDisplay-row .v65-productDisplay-cell.v65-productName a {
-  /*background-color: red;*/
+.v65-productDisplay-row .colors_productname {
   color: #898f9b;
   font-family: "Avenir Next", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.v65-productDisplay-row .colors_productname:hover {
+  text-decoration: none !important;
 }
 
 .colors_pricebox .product_productprice {
@@ -1462,6 +1456,7 @@ a#homepage_title {
 .v65-productDisplay-row .product_productprice * {
   color: #898f9b;
   font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   font-family: "Avenir Next", sans-serif;
 }
@@ -1486,6 +1481,7 @@ a#homepage_title {
 }
 .v65-productDisplay-row .product_productprice font {
   color: #898f9b;
+  font-size: 12px;
 }
 
 
@@ -1552,3 +1548,41 @@ div[itemtype="http://schema.org/Product"] > a {
 .hero-banner img {
   width: 100%;
 }
+
+
+
+/*
+#related_products_content .v65-productDisplay {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px dotted coral;
+}
+#related_products_content .v65-productDisplay tbody {
+  display: flex;
+  flex-direction: column;
+}
+#related_products_content .v65-productDisplay tr td img {
+  width: 20px;
+  height: 20px;
+
+}
+#related_products_content .v65-productDisplay tr td {
+  height: 20px;
+  flex: 1;
+  max-width: 200px;
+}
+#related_products_content .v65-productDisplay tr {
+  border-width: 1px;
+  border-style: dotted;
+  height: 20px;
+  flex: 1;
+  display: flex;
+}
+#related_products_content .v65-productDisplay tr:nth-child(1) { border-color: green;}
+#related_products_content .v65-productDisplay tr:nth-child(2) { border-color: red;}
+#related_products_content .v65-productDisplay tr:nth-child(3) {
+  border-color: coral;
+  order: -2;
+}
+*/
