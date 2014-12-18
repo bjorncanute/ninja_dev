@@ -1586,3 +1586,89 @@ div[itemtype="http://schema.org/Product"] > a {
   order: -2;
 }
 */
+
+
+/** ========== CATEGORY ========== **/
+
+.sortby_select,
+.results_per_page_select {
+  background-color: red;
+  height: 34px;
+  width: 175px;
+  padding: 5px 10px;
+  background-color: #050a12;
+  font-weight: 400;
+  margin: 0 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  color: #898f9b;
+  background: url("../images/template/dropdown-chevron.png") no-repeat 94% 45% #050a12;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  text-indent: 5px;
+  -webkit-appearance: button;
+}
+
+.sortby_select {
+  margin-right: 5px;
+}
+
+.results_per_page_select {
+  width: 130px;
+}
+.results_per_page_select:before {
+  display: block;
+  color: red;
+}
+
+#jmenuhide b span {
+  color: #6b7484;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Cabin", sans-serif;
+  text-transform: none;
+  display: block;
+  text-indent: 25px;
+  padding-bottom: 10px;
+}
+#MainForm table td img[onclick] {
+  margin-top: 28px;
+  background-color: coral;
+}
+#MainForm table[cellpadding] td[align="right"]:nth-child(2):before {
+  content: "Showing";
+  display: block;
+  /*background-color: coral;*/
+  text-indent: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #6b7484;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Cabin", sans-serif;
+}
+#MainForm nobr input {
+  /*-webkit-appearance: none;*/
+  height: 34px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: #050a12;
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
+  color: #898f9b;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  margin: 0 15px;
+}
+  
+#MainForm nobr b {
+  color: red;
+  color: #898f9b;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+}
