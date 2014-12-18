@@ -762,76 +762,6 @@ French Macarons
 <input type="hidden" name="RequestIsQuickEditWindow" value="Y"><input type="checkbox" class="qe_checkbox" style="display:none;" name="AllowQuickEditImageUploader" value="Y">
 <!-- <link rel="stylesheet" href="http://cksvp.kzgpb.servertrust.com/a/c/topbar.css"> -->
 
-<input type="checkbox" id="vp-top-bar-toggle">
-<div id="vp-top-bar" class="vp-top-bar vp-has-shadow" data-bind="css: { &#39;vp-cloak&#39;: false }">
-    <div class="vp-left-panel">
-        <!-- ko ifnot: isAdmin -->
-        <label class="vp-toggle-top-bar" for="vp-top-bar-toggle" data-bind="trackClickEvent: { action: &#39;Show Quick Edit Bar&#39;, label: &#39;Toolbar Event&#39; }">&nbsp;</label>
-        <img src="./Gourmet Food_files/volusion_logo.png" alt="Volusion - shopping cart software" title="Succeed online with Volusion&#39;s shopping cart software" width="107" height="27" class="vp-logo">
-        <!-- /ko -->
-        <!-- ko if: isAdmin --><!-- /ko -->
-        <div class="toggle-wrap">
-            <a title="Manage Store" data-bind="attr: { href: isAdmin ? &#39;javaScript:void(0);&#39; : &#39;/admin/dashboard.asp&#39;, target: (openInSeparateTab &amp;&amp; !isAdmin) ? &#39;_blank&#39; : &#39;_self&#39;}, trackClickEvent: isAdmin ? &#39;Storefront&#39; : &#39;Dashboard&#39;, css: {&#39;toggle-active&#39; : isAdmin}" class="toggle-btn admin-toggle" href="http://cksvp.kzgpb.servertrust.com/admin/dashboard.asp" target="_self">
-                <img data-bind="attr:{src: isAdmin ? &#39;/a/i/topbar/admin-active.png&#39; : &#39;/a/i/topbar/admin.png&#39;}" src="./Gourmet Food_files/admin.png">
-            </a>
-            <a title="View Store" data-bind="attr: { href: !isAdmin ? &#39;javaScript:void(0);&#39; : &#39;/&#39;, target: (openInSeparateTab &amp;&amp; isAdmin) ? &#39;_blank&#39; : &#39;_self&#39;}, trackClickEvent: isAdmin ? &#39;Storefront&#39; : &#39;Dashboard&#39;, css: {&#39;toggle-active&#39; : !isAdmin}" class="toggle-btn storefront-toggle toggle-active" href="javaScript:void(0);" target="_self">
-                <img data-bind="attr:{src: !isAdmin ? &#39;/a/i/topbar/storefront-active.png&#39; : &#39;/a/i/topbar/storefront.png&#39;}" src="./Gourmet Food_files/storefront-active.png">
-            </a>
-        </div>
-    </div>
-
-	<div class="vp-right-panel">
-        <div class="trial-days-left" data-bind="visible: isDemo" style="display: none;">
-            <span data-bind="text:trialDaysLeft" class="trial-days-left__count">0</span> days left in your trial <a href="http://cksvp.kzgpb.servertrust.com/SearchResults.asp?Cat=1514#" data-bind="trackClickEvent: &#39;Start Selling&#39;" class="trial-days-left__link">Buy Now</a>
-        </div>
-		<div class="vp-dropdown-container" data-bind="if: !isAdmin, visible: !isAdmin">
-			<span class="vp-dropdown-toggle">Edit</span>
-			<div class="vp-dropdown">
-				<ul id="vp-top-bar-edit-dropdown" data-bind="foreach: editMenuItems">
-					<li data-bind="visible: ($root.isDemo) !== ($data.paidOnly)">
-						<a data-bind="text: display, attr: { href: href }" href="http://cksvp.kzgpb.servertrust.com/admin/AdminDetails_Generic.asp?table=Categories&ID=1514">This Category</a>
-					</li>
-				
-					<li data-bind="visible: ($root.isDemo) !== ($data.paidOnly)">
-						<a data-bind="text: display, attr: { href: href }" href="http://cksvp.kzgpb.servertrust.com/admin/TableViewer.asp?table=Products&submit.search=Y&IsASearch=Y&ProductCategory=1514">Products</a>
-					</li>
-				</ul>
-				<hr data-bind="visible: editMenuItems">
-				<label for="EnableOnpageEditing">Storefront Editor</label>
-				<label class="vp-switch-container">
-					<input id="EnableOnpageEditing" type="checkbox">
-					<span class="vp-switch">
-						<span class="vp-switch-toggle"><span class="vp-knurling"></span></span>
-					</span>
-				</label>
-			</div>
-		</div>
-		<div class="vp-contact-us vp-dropdown-container" data-bind="if: isDemo, visible: isDemo" style="display: none;"></div>
-		<div class="vp-dropdown-container">
-			<span class="vp-dropdown-toggle">Get Help</span>
-			<form id="support-center-search" class="vp-dropdown">
-				<label class="vp-search-bar-container">
-					<input type="text" class="vp-search-bar">
-					<span class="v13-icon-search"></span>
-				</label>
-				<a data-bind="visible: pageHelpAttr, attr: pageHelpAttr" href="javascript:" class="vp-help-with-page" data-storefront-help="categories">Get help with this page</a>
-			</form>
-		</div>
-		<div class="vp-dropdown-container">
-			<span class="vp-dropdown-toggle">Hi, <span data-bind="text: loggedInFirstName">Bjorn</span></span>
-			<div class="vp-dropdown">
-				<ul>
-					<li><span class="staticContent">Store ID: <span class="vp-admin-store-id" data-bind="text: formattedStoreId">01-535-204</span></span></li>
-					<li id="Notification_Panel_Alert_Icon" data-bind="visible: isAdmin &amp;&amp; adm_show_notifications" style="display: none;"><span class="ToolText"><a href="javascript:" onclick="Notification_Panel.ResetHidden();">[<span id="Notification_Count"></span>] Messages</a></span></li>
-					<li id="ToolsNav_MyVolusion"><span id="ToolsNav_MyVolusionLink" class="subnav ToolText"><a target="_blank" href="http://my.volusion.com/">My Volusion</a></span></li>
-					<li id="ToolsNav_Logout"><span id="ToolsNav_LogoutLink" class="subnav ToolText"><a href="http://cksvp.kzgpb.servertrust.com/login.asp?logout=yes">Log out</a></span></li>
-				</ul>
-			</div>
-		</div>
-		<!-- ko if: !isAdmin --><label class="vp-toggle-top-bar" for="vp-top-bar-toggle" data-bind="trackClickEvent: { action: &#39;Hide Quick Edit Bar&#39;, label: &#39;Toolbar Event&#39; }">&nbsp;</label><!-- /ko -->
-	</div>
-</div>
-
 <script>
     /*
     This spaghetti code is here so it loads literally as fast as possible
@@ -877,4 +807,5 @@ French Macarons
 </script>
 
 
-<div class="admin-warning-bubble" style="display: none;"><span class="admin-warning-text">Edit this text in your </span><a href="javascript:" target="_blank">Admin Area</a>.<span class="arrow"><span class="arrow"></span></span></div><div class="redactor-action-icons" style="display: none;"><span class="redactor-action-icon save"></span><span class="redactor-action-icon cancel"></span></div><div id="qet-box-container"><a href="http://cksvp.kzgpb.servertrust.com/admin" id="qet-link">Edit</a><div id="qet-border-box"></div></div></body></html>
+</body>
+</html>
