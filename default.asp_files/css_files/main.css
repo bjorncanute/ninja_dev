@@ -786,6 +786,7 @@ position: relative;
   font-weight: bold;
   margin-top: 10px;
   width: 60px;
+  font-size: 12px;
 }
 
 #header a.cartLink:hover {
@@ -844,7 +845,10 @@ white-space:normal !important;
 #topNav ul li a:hover {
   color: #83aecf;
   text-decoration: none;
-  /*border-bottom: 4px solid #83aecf;*/
+  /*border-bottom: 3px solid #5d697f;*/
+}
+#topNav ul .nav_selected a {
+  border-bottom: 3px solid #83aecf;
 }
 
 /* ################# POPOUTS ################### */
@@ -917,7 +921,7 @@ white-space:normal !important;
 
 }
 #display_menu_1 .nav a:hover {
-  border-bottom: 3px solid #5d697f;
+  /*border-bottom: 3px solid #5d697f;*/
 }
 
 /*#display_homepage_title meta {
@@ -1618,10 +1622,6 @@ div[itemtype="http://schema.org/Product"] > a {
 .results_per_page_select {
   width: 130px;
 }
-.results_per_page_select:before {
-  display: block;
-  color: red;
-}
 
 #jmenuhide b span {
   color: #6b7484;
@@ -1635,9 +1635,9 @@ div[itemtype="http://schema.org/Product"] > a {
 }
 #MainForm table td img[onclick] {
   margin-top: 28px;
-  background-color: coral;
 }
-#MainForm table[cellpadding] td[align="right"]:nth-child(2):before {
+#MainForm table[cellpadding="3"]:nth-child(1) td[align="right"]:nth-child(2):before {
+  /*background-color: coral;*/
   content: "Showing";
   display: block;
   /*background-color: coral;*/
@@ -1672,3 +1672,81 @@ div[itemtype="http://schema.org/Product"] > a {
   font-family: "Cabin", sans-serif;
   font-size: 12px;
 }
+
+.colors_backgroundneutral {
+  background-color: transparent;
+}
+
+.colors_backgroundneutral .PageText_L669n {
+  /*background-color: red;*/
+}
+
+.colors_backgroundlight {
+  background-color: transparent;
+  /*background-color: coral;*/
+  width: 350px;
+  width: 100%;
+  border-bottom: 1px solid #050a12;
+  height: 45px;
+}
+.colors_backgroundlight b {
+  color: #c6c6c6;
+  font-family: "Cabin", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #050a12;
+}
+
+.colors_backgroundneutral img {
+  display: none;
+}
+
+.colors_backgroundlight td[width="20"] {
+  display: none;
+}
+
+.colors_lines_light {
+  display: none;
+}
+
+
+/*  ========= BRITTLE =========   */
+#content_area > table:nth-child(4) > tbody > tr:nth-child(1) b {
+  /*background-color: red;*/
+  color: #6b7484;
+  font-family: "Cabin", sans-serif;
+}
+
+#content_area > table:nth-child(4) > tbody > tr:nth-child(1) b a {
+  font-family: "Cabin", sans-serif;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* .colors_backgroundneutral */
+#content_area > table:nth-child(4) > tbody > tr:nth-child(3) table:nth-child(2) td td {
+  display: inline;
+  display: inline-block;
+  margin: 0 5px;
+  float: left;
+  /*background-color: #1d2026;*/
+  background-color: #13161e;
+  border-radius: 3px;
+  padding: 5px 15px;
+  /*background-color: coral;*/
+}
+#content_area > table:nth-child(4) > tbody > tr:nth-child(3) table:nth-child(2) td td:hover {
+  background-color: #1d2026;
+} 
+#content_area > table:nth-child(4) > tbody > tr:nth-child(3) table:nth-child(2) td td a {
+  color: #898f9b;
+  font-weight: 100;
+  font-size: 10px;
+  /*text-transform: lowercase;*/
+}
+#content_area > table:nth-child(4) > tbody > tr:nth-child(3) table:nth-child(2) {
+  /*background-color: coral;*/
+  border-bottom: 1px solid #050a12;
+}
+/*  ========= END BRITTLE =========   */
