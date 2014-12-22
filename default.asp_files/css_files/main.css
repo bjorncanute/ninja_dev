@@ -1649,6 +1649,11 @@ div[itemtype="http://schema.org/Product"] > a {
   font-size: 14px;
   font-family: "Cabin", sans-serif;
 }
+.current-page-reference {
+  display: inline;
+  display: inline-block;
+}
+.current-page-reference input,
 #MainForm nobr input {
   /*-webkit-appearance: none;*/
   height: 34px;
@@ -1664,6 +1669,7 @@ div[itemtype="http://schema.org/Product"] > a {
   margin: 0 15px;
 }
   
+.current-page-reference b,
 #MainForm nobr b {
   color: red;
   color: #898f9b;
