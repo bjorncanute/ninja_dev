@@ -1756,3 +1756,73 @@ div[itemtype="http://schema.org/Product"] > a {
   border-bottom: 1px solid #050a12;
 }
 /*  ========= END BRITTLE =========   */
+
+/* Features List */
+#ProductDetail_ProductDetails_div2 {
+  /*border: 1px dotted coral;*/
+  padding: 20px;
+}
+
+#ProductDetail_ProductDetails_div2 b {
+  color: #c9ced7;
+  font-size: 15px;
+  font-family: "Cabin", sans-serif;
+  /*background-color: brown;*/
+  text-transform: uppercase;
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #c9ced7;
+}
+
+#ProductDetail_ProductDetails_div2 li {
+  /*background-color: brown;*/
+  color: #c9ced7;
+  font-size: 15px;
+  font-family: "Cabin", sans-serif;
+  line-height: 24px;
+}
+
+/* Radio Buttons */
+
+#options_table li {
+  /*display: inline;*/
+  /*float: left;*/
+}
+#options_table input {
+  margin: 0;
+  padding: 0;
+  background-color: #575d68;
+  background-color: #9eadc8;
+  border: 1px solid #262a31;
+  /*border-right-width: 0;*/
+  width: 38px;
+  height: 49px;
+  display: block;
+  float: left;
+  -webkit-appearance: none;
+  border-radius: 5px 0 0 5px;
+
+}
+
+#options_table .option {
+  height: 30px;
+  height: 28px;
+  width: 80%;
+  float: left;
+  background-color: #9eadc8;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  color: #262a31;
+  padding: 10px 0 9px 20px;
+  border: 1px solid #262a31;
+  border-left-width: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+#options_table .option span {
+  display: block;
+  color: #3d4249;
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
