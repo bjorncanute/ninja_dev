@@ -1784,45 +1784,25 @@ div[itemtype="http://schema.org/Product"] > a {
 
 /* Radio Buttons */
 
-#options_table li {
-  /*display: inline;*/
-  /*float: left;*/
+#options_table br {
+  /*display: none;*/
 }
+
+#options_table td {
+  line-height: 40px;
+}
+
 #options_table input {
-  margin: 0;
-  padding: 0;
+  width: 19px;
+  height: 19px;
   background-color: #575d68;
-  background-color: #9eadc8;
+  border-radius: 10px;
   border: 1px solid #262a31;
-  /*border-right-width: 0;*/
-  width: 38px;
-  height: 49px;
-  display: block;
-  float: left;
+  margin: 10px;
   -webkit-appearance: none;
-  border-radius: 5px 0 0 5px;
-
 }
-
-#options_table .option {
-  height: 30px;
-  height: 28px;
-  width: 80%;
-  float: left;
-  background-color: #9eadc8;
-  font-family: "Cabin", sans-serif;
-  font-size: 14px;
-  color: #262a31;
-  padding: 10px 0 9px 20px;
-  border: 1px solid #262a31;
-  border-left-width: 0;
-  border-radius: 0 5px 5px 0;
-}
-
-#options_table .option span {
-  display: block;
-  color: #3d4249;
-  font-family: "Cabin", sans-serif;
-  font-size: 12px;
-  font-style: italic;
+#options_table input:checked {
+  border: 1px solid #575d68;
+  background-color: #262a31;
+  box-shadow: 0px 0px 1px 1px #262a31;
 }
